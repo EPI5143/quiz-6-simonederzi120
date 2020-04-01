@@ -50,7 +50,8 @@ run;
 
 *Checking encpatWID duplicates;
 proc sort data=ex.inpt2003 nodupkey;/*51 observations with duplicates were deleted. 
-This finding means that if we want to know the number of patients for this assignment questions, we will need to create a flat file for encpatWID*/
+This finding means that if we want to know the number of patients for this assignment questions, we will need to create 
+a flat file for encpatWID*/
 by encpatwid;
 run;
 

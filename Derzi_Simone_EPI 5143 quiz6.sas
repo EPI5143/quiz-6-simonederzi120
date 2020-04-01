@@ -62,7 +62,7 @@ Flattening process;
 data ex.flatinpt2003;
 set inpt2003;
 by encpatwid;
-if first.encpatwid then count=1;/*initialize the inpatient flag for each new encpatwid*/
+if first.encpatwid then count=1;
 if last.encpatwid then output;/*output the final row for each encpatwid*/
 retain count;
 run;
@@ -90,7 +90,7 @@ started in 2003: 1978 patients;
 data ex.flatEMERG2003;
 set em2003;
 by encpatwid;
-if first.encpatwid then count=1;/*initialize the emergency flag for each new encpatwid*/
+if first.encpatwid then count=1;
 if last.encpatwid then output;/*output the final row for each encpatwid*/
 retain count;
 run;

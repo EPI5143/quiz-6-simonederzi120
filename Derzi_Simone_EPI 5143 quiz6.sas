@@ -50,7 +50,7 @@ run;
 
 *Checking encpatWID duplicates;
 proc sort data=ex.inpt2003 nodupkey;/*51 observations with duplicates were deleted. 
-This finding means that if we want to know the number of patients for this assisgnment questions, we will need to create a flat file for encpatWID*/
+This finding means that if we want to know the number of patients for this assignment questions, we will need to create a flat file for encpatWID*/
 by encpatwid;
 run;
 
@@ -121,7 +121,7 @@ proc print data=ex.eithertype;
 run;
 
 
-*If I proceed with the flattening process, i have the same result.
+*If I proceed with the flattening process, I have the same result.
 Flattening process. The number of patients who had at least 1 emergency or inpatient encounter that started in 2003: 2891 patients; 
 
 proc sort data=ex.eithertype out=anytype;

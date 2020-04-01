@@ -192,7 +192,8 @@ run;
 
 
 
-*Generating a frequency table with the number of encounters that each patient had. Note that patient with the code (encpatwid) 910057 had 12 encounters;
+*Generating a frequency table with the number of encounters that each patient had. Note that patient with 
+					  the code (encpatwid) 910057 had 12 encounters;
 
 ods listing;
 options formchar="|----|+|---+=|-/\<>*";

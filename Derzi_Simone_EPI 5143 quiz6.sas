@@ -166,7 +166,7 @@ else count+1;
 if last.encpatwid then output;
 run;
 
-*Generating a frequency table with the total number of encounters (counts) and its frequency;
+*Generating a frequency table with the total number of encounters ("count" variable) and its frequency;
 
 ods listing;
 options formchar="|----|+|---+=|-/\<>*";

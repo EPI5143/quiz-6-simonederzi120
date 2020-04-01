@@ -112,7 +112,8 @@ proc sort data=ex.eithertype;
 by encpatwid;
 run;
 
-*Since all the patients from the above dataset had at least 1 visit (either inpatient or emergency encounter), I will delete the duplicated IDs (encpatwid);
+*Since all the patients from the above dataset had at least 1 visit (either inpatient or emergency encounter), I will 
+delete the duplicated IDs (encpatwid);
 proc sort data=ex.eithertype nodupkey;/*Now we have 2891 patients*/
 by encpatwid;
 run;
